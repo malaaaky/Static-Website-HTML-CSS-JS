@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimchi Korean Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="short icon" href="Assets/shortIcon.png">
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+     <!--  Nav Bar -->
+
+    <section id="home">
+
+        
+        <nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="Assets/koreanLogo.png" alt="logo"></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html" class="action">Home</a></li>
+                <li><a href="#">Services</a>
+                        <ul class="submenu">
+                                <li><a href="order.html">Order</a></li>
+                                <li><a href="#get-to-know-us">Get to know us </a>
+                                   
+                                        <ul class="submenu2">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="contactus.html">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                </li>
+                
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+
+            <div class="login">
+                <a href="login.html">Login</a>
+            </div>
+
+        </nav>
+
+<!-- main section -->
+
+<!--Oder-->
+
+    <div class="order">
+
+        <h1><span>Order</span>Now</h1>
+
+        <div class="order_main">
+
+            <div class="order_img">
+                <img src="Assets/oder.png">
+            </div>
+
+            <div class="order_form" id="orderForm">
+
+                <h2>Home Delivery</h2>
+
+                <div class="order_list">
+
+                    <div class="order_left">
+
+                        <p>Full Name</p>
+                        <input type="text" placeholder="John Deo">
+
+                        <p>Number</p>
+                        <input type="text" placeholder="+94 12 345 6789">
+
+                        <p> Food Preference</p>
+                        <input type="text" placeholder="with cola">
+
+                        <p>Your Address</p>
+                        <textarea placeholder="Enter You Address"></textarea>
+
+                    </div>
+
+                    <div class="order_right">
+
+                        <p>Email</p>
+                        <input type="email" placeholder="johndeo123@gmail.com">
+
+                        <p>Area</p>
+                        <input type="list" placeholder="Area" id="areaList">
+                        <datalist id="areaList">
+                            <option value="NewCairo"></option>
+                            <option value="Maadi"></option>
+                            <option value="Zamalek"></option>
+                        </datalist>
+
+                        <p>How Much</p>
+                        <input type="number" placeholder="3">
+
+                        <p>Your Message</p>
+                        <textarea placeholder="Enter Your Message"></textarea>
+
+                    </div>
+
+                </div>
+
+                 <!-- coupon section for js code -->
+                <div id="coupon">
+                    <h3>Apply Coupon</h3>
+                    <div>
+                        <input type="text" id="couponCode" placeholder="Enter your coupon">
+                        <button id="applyCouponButton" class="normal" onclick="applyCoupon()">Apply</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="order_btn" id="orderNowBtn" onclick="submitForm()"><i class="fa-solid fa-burger"></i>Order Now</button>
+
+                <div class="thank-you-message" id="thankYouMessage" >
+                    <h2>Thank you for ordering!</h2>
+                    <p id="submitAnother" onclick="showForm()">Your order has been received. Would you like to order again?</p>
+                </div>
+
+            </div>
+
+          
+
+           
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+          <!--Footer-->
+
+    <footer>
+
+        <div class="footer_main">
+
+            <div class="footer_tag">
+
+                <h2>Location</h2>
+                <p>Cairo</p>
+                <p>Seoul</p>
+                <p>UK</p>
+                
+
+            </div>
+
+            <div class="footer_tag">
+
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>Services</p>
+                <p>Menu</p>
+                <p>Order</p>
+
+            </div>
+
+            <div class="footer_tag">
+
+                <h2>Contact</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568 456</p>
+                <p>yungwan@gmail.com</p>
+                <p>kimchi123@gmail.com</p>
+
+            </div>
+
+            <div class="footer_tag">
+
+                <h2>Our Services</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+
+            </div>
+
+            <div class="footer_tag">
+
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </div>
+
+        </div>
+
+        <p>&copyby Malak Ahmed. All rights reserved</p>
+
+    </footer>
+</body>
+</html>
